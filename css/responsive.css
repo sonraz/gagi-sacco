@@ -1,0 +1,74 @@
+/* ===========================================
+   GAGI SACCO WEBSITE
+   Responsive Styles
+
+   Mobile First Approach
+
+   Breakpoints
+
+   Small Devices : Default
+
+   Tablets       : 768px
+
+   Laptops       : 1024px
+
+   Large Screens : 1280px
+=========================================== */
+
+
+
+/* ===========================================
+   TABLETS
+=========================================== */
+
+@media screen and (min-width:768px){
+
+    /* Typography */
+
+    h1{
+
+        font-size: var(--fs-3xl);
+
+    }
+
+    h2{
+
+        font-size: 2.5rem;
+
+    }
+
+}
+
+
+
+
+/* ===========================================
+   LAPTOPS
+=========================================== */
+
+@media screen and (min-width:1024px){
+
+    .container{
+
+        width:min(92%, var(--container-width));
+
+    }
+
+}
+
+
+
+
+/* ===========================================
+   LARGE DESKTOPS
+=========================================== */
+
+@media screen and (min-width:1280px){
+
+    .container{
+
+        width:min(90%, var(--container-width));
+
+    }
+
+}

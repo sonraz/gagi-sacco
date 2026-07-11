@@ -1,0 +1,202 @@
+/* ===========================================
+   GAGI SACCO WEBSITE
+   Global Styles
+
+   Table of Contents
+   1. Reset
+   2. Base Styles
+   3. Container
+   4. Typography
+   5. Section Spacing
+   6. Utility Classes
+   7. Text Selection
+=========================================== */
+
+
+/* ===========================================
+   1. RESET
+=========================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* ===========================================
+   2. BASE STYLES
+=========================================== */
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--fs-sm);
+    background-color: var(--white);
+    color: var(--dark);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+button,
+input,
+textarea{
+    font-family: inherit;
+}
+
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+/* ===========================================
+   3. CONTAINER
+=========================================== */
+
+.container{
+    width: min(90%, var(--container-width));
+    margin-inline: auto;
+}
+
+
+/* ===========================================
+   4. TYPOGRAPHY
+=========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--heading-font);
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+    color: var(--secondary-color);
+}
+
+h1{
+    font-size: var(--fs-2xl);
+}
+
+h2{
+    font-size: var(--fs-xl);
+}
+
+h3{
+    font-size: var(--fs-lg);
+}
+
+h4{
+    font-size: var(--fs-md);
+}
+
+p{
+    margin-top: 1rem;
+    color: #555;
+}
+
+span{
+    color: var(--primary-color);
+}
+
+
+/* ===========================================
+   5. SECTION SPACING
+=========================================== */
+
+section{
+    padding: 5rem 0;
+}
+
+
+/* ===========================================
+   6. UTILITY CLASSES
+=========================================== */
+
+.text-center{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.hidden{
+    display: none;
+}
+
+.shadow{
+    box-shadow: var(--shadow);
+}
+
+.rounded{
+    border-radius: var(--radius-md);
+}
+
+.bg-light{
+    background: var(--light);
+}
+
+.bg-dark{
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+.mt-1{
+    margin-top: 1rem;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+.mt-3{
+    margin-top: 3rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+.mb-3{
+    margin-bottom: 3rem;
+}
+
+
+/* ===========================================
+   7. TEXT SELECTION
+=========================================== */
+
+::selection{
+    background: var(--primary-color);
+    color: var(--white);
+}

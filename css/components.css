@@ -1,0 +1,88 @@
+/* ===========================================
+   GAGI SACCO WEBSITE
+   Components Styles
+
+   Table of Contents
+   1. Buttons
+   2. Cards (Coming Soon)
+   3. Navigation (Coming Soon)
+   4. Hero (Coming Soon)
+   5. Forms (Coming Soon)
+   6. Footer (Coming Soon)
+=========================================== */
+
+
+/* ===========================================
+   1. BUTTONS
+=========================================== */
+
+/* Base Button */
+
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 28px;
+
+    font-family: var(--body-font);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+
+    border-radius: var(--radius-sm);
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+
+/* Primary Button */
+
+.btn-primary{
+
+    background: var(--primary-color);
+    color: var(--white);
+
+}
+
+.btn-primary:hover{
+
+    background: #256729;
+
+}
+
+
+/* Secondary Button */
+
+.btn-secondary{
+
+    background: var(--accent-color);
+    color: var(--white);
+
+}
+
+.btn-secondary:hover{
+
+    background: #d66b00;
+
+}
+
+
+/* Outline Button */
+
+.btn-outline{
+
+    border: 2px solid var(--primary-color);
+
+    color: var(--primary-color);
+
+}
+
+.btn-outline:hover{
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+}

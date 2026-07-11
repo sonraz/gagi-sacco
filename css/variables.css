@@ -1,0 +1,59 @@
+/* ============================
+   GAGI SACCO DESIGN SYSTEM
+============================ */
+
+:root{
+
+    /* Brand Colors */
+
+    --primary-color:#2E7D32;
+    --secondary-color:#37474F;
+    --accent-color:#F57C00;
+
+    --white:#FFFFFF;
+    --light:#F5F5F5;
+    --gray:#9E9E9E;
+    --dark:#212121;
+
+    /* Typography */
+
+    --heading-font:'Poppins', sans-serif;
+    --body-font:'Inter', sans-serif;
+
+    /* Font Sizes */
+
+    --fs-xs:0.875rem;
+    --fs-sm:1rem;
+    --fs-md:1.125rem;
+    --fs-lg:1.5rem;
+    --fs-xl:2rem;
+    --fs-2xl:2.8rem;
+    --fs-3xl:3.5rem;
+
+    /* Font Weight */
+
+    --fw-regular:400;
+    --fw-medium:500;
+    --fw-semibold:600;
+    --fw-bold:700;
+    --fw-extrabold:800;
+
+    /* Border Radius */
+
+    --radius-sm:8px;
+    --radius-md:12px;
+    --radius-lg:20px;
+
+    /* Shadows */
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    /* Transition */
+
+    --transition:.3s ease;
+
+    /* Max Width */
+
+    --container-width:1200px;
+
+}
