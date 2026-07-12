@@ -1,0 +1,374 @@
+/* ==========================================================
+   GAGI SACCO WEBSITE
+   File: navbar.css
+   Description: Shared Navigation Styles
+   Author: Elvis Mati
+   Version: 2.0
+========================================================== */
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .08);
+}
+
+
+/* ==========================================================
+   NAVBAR
+========================================================== */
+
+.navbar {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+
+/* ==========================================================
+   RIGHT SIDE ACTIONS
+========================================================== */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* ==========================================
+   REQUEST QUOTE BUTTON
+========================================== */
+
+.nav-btn {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 14px;
+
+    background: var(--primary-color);
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+
+}
+
+.nav-btn:hover {
+
+    background: #1f7d2f;
+
+}
+
+.nav-btn:hover {
+    background: #1f7d2f;
+}
+
+
+/* ==========================================================
+   MOBILE MENU
+========================================================== */
+
+.nav-menu {
+
+    position: fixed;
+
+    top: 80px;
+
+    left: -100%;
+
+    width: 100%;
+
+    height: calc(100vh - 80px);
+
+    background: #ffffff;
+
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 35px 20px;
+
+    transition: .35s ease;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+.nav-menu.active {
+
+    left: 0;
+
+}
+
+
+.nav-menu li {
+
+    width: 100%;
+
+}
+
+
+.nav-link {
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: var(--dark-color);
+
+    font-weight: 600;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    transition: .3s;
+
+}
+
+
+.nav-link:hover {
+
+    background: #f4f4f4;
+
+    color: var(--primary-color);
+
+}
+
+
+.nav-link.active {
+
+    color: var(--primary-color);
+
+}
+
+
+/* ==========================================================
+   HAMBURGER BUTTON
+========================================================== */
+
+.menu-toggle {
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 5px;
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+.menu-toggle span {
+
+    display: block;
+
+    width: 26px;
+    height: 3px;
+
+    background: #2c3e50;
+
+    border-radius: 50px;
+
+    transition: 0.3s ease;
+
+}
+
+
+/* ==========================================================
+   HAMBURGER ANIMATION
+========================================================== */
+
+.menu-toggle.active span:nth-child(1) {
+
+    transform: translateY(8px) rotate(45deg);
+
+}
+
+.menu-toggle.active span:nth-child(2) {
+
+    opacity: 0;
+
+}
+
+.menu-toggle.active span:nth-child(3) {
+
+    transform: translateY(-8px) rotate(-45deg);
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (min-width:768px) {
+
+    .logo img {
+
+        height: 62px;
+
+    }
+
+    .nav-btn {
+
+        padding: 12px 18px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   DESKTOP
+========================================================== */
+
+@media (min-width:992px) {
+
+    .navbar {
+
+        height: 90px;
+
+    }
+
+    .logo img {
+
+        height: 70px;
+
+    }
+
+    .menu-toggle {
+
+        display: none;
+
+    }
+
+    .nav-menu {
+
+        position: static;
+
+        width: auto;
+
+        height: auto;
+
+        background: transparent;
+
+        flex-direction: row;
+
+        gap: 35px;
+
+        padding: 0;
+
+        box-shadow: none;
+
+    }
+
+    .nav-menu li {
+
+        width: auto;
+
+    }
+
+    .nav-link {
+
+        padding: 6px 0;
+
+        position: relative;
+
+    }
+
+    .nav-link::after {
+
+        content: "";
+
+        position: absolute;
+
+        left: 0;
+
+        bottom: -8px;
+
+        width: 0;
+
+        height: 3px;
+
+        background: var(--primary-color);
+
+        transition: .3s;
+
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+
+        width: 100%;
+
+    }
+
+    .nav-btn {
+
+    padding: 14px 24px;
+
+    font-size: 0.95rem;
+
+    border-radius: 50px;
+  }
+
+}
