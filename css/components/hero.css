@@ -1,0 +1,695 @@
+/* ==========================================================
+   GAGI SACCO WEBSITE
+   File: hero.css
+   Description: Homepage Hero Section
+   Author: Elvis Mati
+   Version: 2.0
+========================================================== */
+
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+.hero {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("../../images/hero/hero-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+
+}
+
+
+/* ==========================================================
+   HERO OVERLAY
+========================================================== */
+
+.hero-overlay {
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.72) 0%,
+            rgba(0,0,0,.48) 45%,
+            rgba(0,0,0,.20) 100%
+        );
+
+}
+
+
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+
+.hero .container {
+
+    position: relative;
+    z-index: 2;
+
+}
+
+.hero-content {
+
+    max-width: 640px;
+    color: var(--white);
+
+}
+
+
+/* ==========================================================
+   HERO TAG
+========================================================== */
+
+.hero-tag {
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    margin-bottom: 30px;
+
+    border: 1px solid rgba(255,255,255,.45);
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,.08);
+
+    backdrop-filter: blur(8px);
+
+    color: var(--white);
+
+    font-size: .85rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================================================
+   HERO HEADING
+========================================================== */
+
+.hero h1 {
+
+    color: var(--white);
+
+    font-family: var(--heading-font);
+
+    font-size: 4.6rem;
+
+    font-weight: var(--fw-extrabold);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 30px;
+
+    text-shadow: 0 5px 25px rgba(0,0,0,.45);
+
+}
+
+.hero h1 span {
+
+    display: block;
+
+    margin-top: 12px;
+
+    color: #4CD964;
+
+}
+
+
+/* ==========================================================
+   HERO PARAGRAPH
+========================================================== */
+
+.hero p {
+
+    max-width: 560px;
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+    color: rgba(255,255,255,.96);
+
+    margin-bottom: 35px;
+
+}
+
+
+/* ==========================================================
+   HERO DIVIDER
+========================================================== */
+
+.hero-divider {
+
+    width: 80px;
+
+    height: 4px;
+
+    background: var(--primary-color);
+
+    border-radius: 50px;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 55px;
+    margin-left: -18px;
+
+}
+
+.hero-buttons .btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 16px 30px;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    border-radius: 12px;
+
+}
+
+.btn-secondary {
+
+    background: var(--accent-color);
+
+    color: var(--white);
+
+}
+
+.btn-secondary:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ==========================================================
+   TRUST FEATURES
+========================================================== */
+
+.hero-features {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+}
+
+.feature {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 20px;
+
+    border-radius: 14px;
+
+    background: rgba(255,255,255,.12);
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    backdrop-filter: blur(14px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+
+    transition: .3s ease;
+
+}
+
+.feature:hover {
+
+    transform: translateY(-4px);
+
+    background: rgba(255,255,255,.18);
+
+}
+
+.feature i {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(46,125,50,.18);
+
+    color: #58d86b;
+
+    font-size: 1.2rem;
+
+}
+
+.feature span {
+
+    color: var(--white);
+
+    font-weight: 600;
+
+    font-size: .95rem;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE TABLET
+========================================================== */
+
+@media (max-width:991px){
+
+.hero{
+
+    min-height:95vh;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    max-width:100%;
+
+    margin:auto;
+
+}
+
+.hero-divider{
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+.hero h1{
+
+    font-size:3.3rem;
+
+}
+
+.hero p{
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-features{
+
+    justify-content:center;
+
+}
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE MOBILE
+========================================================== */
+
+@media (max-width:576px){
+
+.hero{
+
+    min-height:100vh;
+
+    padding-top:120px;
+
+    padding-bottom:140px;
+
+}
+
+.hero-content{
+
+    width:100%;
+
+    max-width:100%;
+
+    padding-left:2.8rem;
+
+    padding-right:1.2rem;
+
+    text-align:center;
+
+}
+
+.hero-tag{
+
+    font-size:.72rem;
+
+    padding:10px 18px;
+
+}
+
+.hero h1{
+
+    font-size:2.6rem;
+
+    line-height:1.12;
+
+    letter-spacing:-1px;
+
+}
+
+.hero p{
+
+    max-width:100%;
+
+    margin:0 auto 35px;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+.hero-divider{
+
+    margin:0 auto 40px;
+
+}
+
+.hero-buttons{
+
+    width:100%;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+    margin-left: 0;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+
+    max-width:320px;
+
+}
+
+.hero-features{
+
+    width:100%;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+}
+
+.feature{
+
+    width:100%;
+
+    max-width:320px;
+
+    justify-content:center;
+
+}
+
+.scroll-indicator{
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+}
+
+
+/* ==========================================================
+   PREMIUM SCROLL INDICATOR
+========================================================== */
+
+.scroll-indicator{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:35px;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    z-index:5;
+    
+    bottom:40px;
+
+    /* ==========================================
+     Fade In Animation
+    ========================================== */
+
+    .scroll-indicator{
+
+        opacity:0;
+
+        animation:
+            fadeInScroll .8s ease forwards 1.2s;
+
+    }
+
+    @keyframes fadeInScroll{
+
+        from{
+
+            opacity:0;
+
+            transform:translate(-50%,20px);
+
+        }
+
+        to{
+
+            opacity:1;
+
+            transform:translate(-50%,0);
+
+        }
+
+    }
+
+}
+
+/* ==========================================
+   Mouse Body
+========================================== */
+
+.mouse{
+
+    width:32px;
+
+    height:55px;
+
+    border:2px solid rgba(255,255,255,.75);
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    display:flex;
+
+    justify-content:center;
+
+    padding-top:8px;
+
+    transition:.3s ease;
+
+}
+
+/* ==========================================
+   Mouse Wheel
+========================================== */
+
+.wheel{
+
+    width:4px;
+
+    height:10px;
+
+    background:var(--primary-color);
+
+    border-radius:10px;
+
+    animation:mouseWheel 2s infinite;
+
+}
+
+/* ==========================================
+   Scroll Text
+========================================== */
+
+.scroll-text{
+
+    color:rgba(255,255,255,.80);
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    transition:.3s ease;
+
+}
+
+/* ==========================================
+   Hover Effects
+========================================== */
+
+.scroll-indicator:hover .mouse{
+
+    border-color:var(--primary-color);
+
+    background:rgba(46,125,50,.12);
+
+    transform:translateY(-3px);
+
+}
+
+.scroll-indicator:hover .scroll-text{
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   Mouse Wheel Animation
+========================================== */
+
+@keyframes mouseWheel{
+
+    0%{
+
+        opacity:0;
+
+        transform:translateY(0);
+
+    }
+
+    30%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translateY(18px);
+
+    }
+
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media(max-width:768px){
+
+.scroll-indicator{
+
+    bottom:25px;
+
+}
+
+.mouse{
+
+    width:28px;
+
+    height:48px;
+
+}
+
+.scroll-text{
+
+    font-size:.72rem;
+
+    letter-spacing:2px;
+
+}
+
+}

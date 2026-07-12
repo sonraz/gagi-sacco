@@ -6,9 +6,9 @@
 
     /* Brand Colors */
 
-    --primary-color:#2E7D32;
-    --secondary-color:#37474F;
-    --accent-color:#F57C00;
+    --primary-color:#2E7D32;      /* Green */
+    --secondary-color:#37474F;    /* Charcoal Gray */
+    --accent-color:#F57C00;       /* Orange */
 
     --white:#FFFFFF;
     --light:#F5F5F5;
@@ -55,5 +55,34 @@
     /* Max Width */
 
     --container-width:1200px;
+
+    /* ============================
+   Navbar
+============================ */
+
+--navbar-height:90px;
+
+
+/* ============================
+   Z-Index
+============================ */
+
+--z-header:1000;
+--z-overlay:900;
+--z-modal:2000;
+
+
+/* ============================
+   Section Spacing
+============================ */
+
+--section-padding:100px 0;
+
+
+/* ============================
+   Container
+============================ */
+
+--container-padding:0 20px;
 
 }

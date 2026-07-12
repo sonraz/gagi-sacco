@@ -200,3 +200,14 @@ section{
     background: var(--primary-color);
     color: var(--white);
 }
+
+
+/* ==========================================
+   SMOOTH SCROLLING
+========================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}

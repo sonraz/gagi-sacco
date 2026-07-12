@@ -2,6 +2,9 @@
 
 <?php include 'includes/navbar.php'; ?>
 
+<?php include 'includes/hero.php'; ?>
+
+
 <main>
 
     <!-- ===========================================
