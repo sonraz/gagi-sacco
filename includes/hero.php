@@ -99,7 +99,7 @@
 
                 <div class="feature">
 
-                    <i class="fas fa-shield-"></i>
+                    <i class="fas fa-shield-alt"></i>
 
                     <span>Premium Quality</span>
 
@@ -131,7 +131,7 @@
      PREMIUM SCROLL INDICATOR
     =========================================== -->
 
-    <a href="#about-preview"
+    <a href="#about"
     class="scroll-indicator"
     aria-label="Scroll Down">
 

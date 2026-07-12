@@ -62,9 +62,14 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Component Styles -->
+
+    <link rel="stylesheet" href="css/components/buttons.css">
+
     <link rel="stylesheet" href="css/components/navbar.css">
 
     <link rel="stylesheet" href="css/components/hero.css">
+
+    <link rel="stylesheet" href="css/components/about.css">
 
     <!-- Responsive Styles -->
     <link rel="stylesheet" href="css/responsive.css">

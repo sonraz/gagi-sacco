@@ -2,15 +2,12 @@
 
 <?php include 'includes/navbar.php'; ?>
 
-<?php include 'includes/hero.php'; ?>
-
 
 <main>
 
-    <!-- ===========================================
-         HERO SECTION
-         (Coming in the next sprint)
-    ============================================ -->
+    <?php include 'includes/hero.php'; ?>
+
+    <?php include 'includes/about.php'; ?>
 
 </main>
 

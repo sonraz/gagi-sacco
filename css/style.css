@@ -201,13 +201,3 @@ section{
     color: var(--white);
 }
 
-
-/* ==========================================
-   SMOOTH SCROLLING
-========================================== */
-
-html{
-
-    scroll-behavior:smooth;
-
-}

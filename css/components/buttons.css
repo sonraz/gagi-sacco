@@ -1,0 +1,65 @@
+/* ==========================================================
+   GAGI SACCO WEBSITE
+   File: buttons.css
+   Description: Global Buttons
+   Author: Elvis Mati
+   Version: 1.0
+========================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    cursor:pointer;
+
+}
+
+.btn-primary{
+
+    background:var(--primary-color);
+
+    color:var(--white);
+
+}
+
+.btn-primary:hover{
+
+    background:#256c2a;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(46,125,50,.25);
+
+}
+
+.btn-secondary{
+
+    background:var(--accent-color);
+
+    color:var(--white);
+
+}
+
+.btn-secondary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(245,124,0,.30);
+
+}

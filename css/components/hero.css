@@ -188,7 +188,7 @@
     flex-wrap: wrap;
 
     margin-bottom: 55px;
-    margin-left: -18px;
+    margin-left: 0px;
 
 }
 
@@ -514,7 +514,7 @@
     bottom:40px;
 
     /* ==========================================
-     Fade In Animation
+   Fade In Animation
     ========================================== */
 
     .scroll-indicator{
