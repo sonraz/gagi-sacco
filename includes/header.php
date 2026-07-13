@@ -73,6 +73,8 @@
 
     <link rel="stylesheet" href="css/sections/why-us.css">
 
+    <link rel="stylesheet" href="css/sections/products.css">
+
 
     <!-- Responsive Styles -->
     <link rel="stylesheet" href="css/responsive.css">

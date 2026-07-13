@@ -11,6 +11,8 @@
 
     <?php include 'includes/why-us.php'; ?>
 
+    <?php include 'includes/products.php'; ?>
+
 </main>
 
 <?php include 'includes/footer.php'; ?>
