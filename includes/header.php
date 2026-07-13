@@ -67,9 +67,12 @@
 
     <link rel="stylesheet" href="css/components/navbar.css">
 
-    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/sections/hero.css">
 
-    <link rel="stylesheet" href="css/components/about.css">
+    <link rel="stylesheet" href="css/sections/about.css">
+
+    <link rel="stylesheet" href="css/sections/why-us.css">
+
 
     <!-- Responsive Styles -->
     <link rel="stylesheet" href="css/responsive.css">

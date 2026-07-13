@@ -1,0 +1,685 @@
+/* ==========================================================
+   GAGI SACCO WEBSITE
+   File: hero.css
+   Description: Homepage Hero Section
+   Author: Elvis Mati
+   Version: 3.1
+========================================================== */
+
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+.hero{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    overflow:clip;
+
+    background:url("../../images/hero/hero-background.png") center center/cover no-repeat;
+
+}
+
+
+/* ==========================================================
+   HERO OVERLAY
+========================================================== */
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,.72) 0%,
+        rgba(0,0,0,.45) 45%,
+        rgba(0,0,0,.18) 100%
+    );
+
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+
+.hero-content{
+
+    max-width:650px;
+
+    color:var(--white);
+
+}
+
+
+/* ==========================================================
+   HERO TAG
+========================================================== */
+
+.hero-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 24px;
+
+    margin-bottom:30px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+
+    color:#FFFFFF;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:1.5px;
+
+    text-shadow:0 2px 8px rgba(0,0,0,.45);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.18),
+        inset 0 1px 0 rgba(255,255,255,.15);
+
+}
+
+/* ==========================================================
+   HERO TITLE
+========================================================== */
+
+.hero-title{
+
+    color:#fff;
+
+    font-size:4.8rem;
+
+    font-weight:800;
+
+    line-height:1.05;
+
+    letter-spacing:-2px;
+
+    margin-bottom:30px;
+
+    text-shadow:0 8px 25px rgba(0,0,0,.35);
+
+}
+
+.hero-title span{
+
+    display:block;
+
+    margin-top:10px;
+
+    color:#59d86c;
+
+}
+
+
+/* ==========================================================
+   HERO DESCRIPTION
+========================================================== */
+
+.hero-description{
+
+    max-width:560px;
+
+    font-size:1.12rem;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.95);
+
+    margin-bottom:40px;
+
+}
+
+
+/* ==========================================================
+   SECTION DIVIDER
+========================================================== */
+
+.section-divider{
+
+    width:80px;
+
+    height:5px;
+
+    border-radius:50px;
+
+    background:var(--primary-color);
+
+    margin-bottom:45px;
+
+}
+
+
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:50px;
+
+}
+
+.hero-buttons .btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:16px 30px;
+
+    border-radius:12px;
+
+    transition:.35s ease;
+
+}
+
+.hero-buttons .btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.btn-secondary{
+
+    background:var(--accent-color);
+
+    color:#fff;
+
+}
+
+
+/* ==========================================================
+   TRUST FEATURES
+========================================================== */
+
+.hero-features{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-bottom:50px;
+
+
+}
+
+.hero-feature{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px 22px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+    transition:.35s ease;
+
+}
+
+.hero-feature:hover{
+
+    transform:translateY(-5px);
+
+    background:rgba(255,255,255,.16);
+
+}
+
+.hero-feature i{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(46,125,50,.18);
+
+    color:#59d86c;
+
+}
+
+.hero-feature span{
+
+    color:#fff;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================================
+   SCROLL INDICATOR
+========================================================== */
+
+.scroll-indicator{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:45px;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    z-index:20;
+
+    animation:fadeInScroll .8s ease forwards;
+
+}
+
+.mouse{
+
+    width:34px;
+
+    height:56px;
+
+    border:2px solid rgba(255,255,255,.75);
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    display:flex;
+
+    justify-content:center;
+
+    padding-top:8px;
+
+    transition:.35s;
+
+}
+
+.wheel{
+
+    width:4px;
+
+    height:12px;
+
+    border-radius:20px;
+
+    background:var(--primary-color);
+
+    animation:scrollWheel 1.4s ease-in-out infinite;
+
+}
+
+.scroll-text{
+
+    color:rgba(255,255,255,.82);
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.scroll-indicator:hover .mouse{
+
+    border-color:var(--primary-color);
+
+    transform:translateY(-4px);
+
+}
+
+.scroll-indicator:hover .scroll-text{
+
+    color:#fff;
+
+}
+
+
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
+
+@keyframes fadeInScroll{
+
+    from{
+
+        opacity:0;
+
+        transform:translate(-50%,20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translate(-50%,0);
+
+    }
+
+}
+
+
+@keyframes scrollWheel{
+
+    0%{
+
+        opacity:0;
+
+        transform:translateY(0);
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    80%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translateY(22px);
+
+    }
+
+}
+
+/* ==========================================================
+   RESPONSIVE - TABLET
+========================================================== */
+
+@media (max-width:991px){
+
+.hero{
+
+    min-height:100vh;
+
+    padding-top:120px;
+
+    padding-bottom:170px;
+
+    align-items:flex-start;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    max-width:100%;
+
+    margin:0 auto;
+
+}
+
+.hero-title{
+
+    font-size:3.3rem;
+
+}
+
+.hero-description{
+
+    max-width:700px;
+
+    margin:0 auto 40px;
+
+}
+
+.section-divider{
+
+    margin:0 auto 40px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-features{
+
+    justify-content:center;
+
+}
+
+.scroll-indicator{
+
+    bottom:35px;
+
+}
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE - MOBILE
+========================================================== */
+
+@media (max-width:576px){
+
+.hero{
+
+    min-height:100vh;
+
+    padding-top:110px;
+
+    padding-bottom:180px;
+
+}
+
+.hero-content{
+
+    width:100%;
+
+    max-width:100%;
+
+    padding:0 1.2rem;
+
+    text-align:center;
+
+}
+.hero-tag{
+
+    font-size:.72rem;
+
+    padding:10px 18px;
+
+}
+
+.hero-title{
+
+    font-size:2.45rem;
+
+    line-height:1.15;
+
+    letter-spacing:-1px;
+
+}
+
+.hero-description{
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+    margin:0 auto 35px;
+
+}
+
+.section-divider{
+
+    margin:0 auto 35px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    width:100%;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+
+    max-width:320px;
+
+}
+
+.hero-features{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    width:100%;
+
+}
+
+.hero-feature{
+
+    width:100%;
+
+    max-width:320px;
+
+    justify-content:center;
+
+}
+
+.scroll-indicator{
+
+    bottom:25px;
+
+}
+
+.mouse{
+
+    width:28px;
+
+    height:48px;
+
+}
+
+.scroll-text{
+
+    font-size:.72rem;
+
+    letter-spacing:2px;
+
+}
+
+}
+
+
+/* ==========================================================
+   LARGE DESKTOPS
+========================================================== */
+
+@media (min-width:1400px){
+
+.hero-title{
+
+    font-size:5.3rem;
+
+}
+
+.hero-content{
+
+    max-width:720px;
+
+}
+
+}
+

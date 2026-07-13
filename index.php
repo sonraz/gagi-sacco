@@ -9,6 +9,8 @@
 
     <?php include 'includes/about.php'; ?>
 
+    <?php include 'includes/why-us.php'; ?>
+
 </main>
 
 <?php include 'includes/footer.php'; ?>

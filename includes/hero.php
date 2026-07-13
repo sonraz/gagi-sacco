@@ -4,13 +4,13 @@
    File: hero.php
    Description: Homepage Hero Section
    Author: Elvis Mati
-   Version: 2.0
+   Version: 3.0
 ============================================================ */
 ?>
 
 <!-- ==========================================================
      HERO SECTION
-=========================================================== -->
+========================================================== -->
 
 <section class="hero">
 
@@ -32,10 +32,10 @@
             </span>
 
             <!-- ===========================================
-                 HERO HEADING
+                 HERO TITLE
             ============================================ -->
 
-            <h1>
+            <h1 class="hero-title">
 
                 Building Strong
                 Foundations
@@ -52,7 +52,7 @@
                  HERO DESCRIPTION
             ============================================ -->
 
-            <p>
+            <p class="hero-description">
 
                 GAGI SACCO manufactures high-quality precast concrete
                 products including cabro blocks, culverts, concrete pipes,
@@ -61,9 +61,11 @@
 
             </p>
 
-            <!-- Decorative Divider -->
+            <!-- ===========================================
+                 SECTION DIVIDER
+            ============================================ -->
 
-            <div class="hero-divider"></div>
+            <div class="section-divider"></div>
 
             <!-- ===========================================
                  HERO BUTTONS
@@ -97,7 +99,7 @@
 
             <div class="hero-features">
 
-                <div class="feature">
+                <div class="feature hero-feature">
 
                     <i class="fas fa-shield-alt"></i>
 
@@ -105,19 +107,11 @@
 
                 </div>
 
-                <div class="feature">
+                <div class="feature hero-feature">
 
                     <i class="fas fa-truck"></i>
 
                     <span>Reliable Supply</span>
-
-                </div>
-
-                <div class="feature">
-
-                    <i class="fas fa-clock"></i>
-
-                    <span>On-Time Delivery</span>
 
                 </div>
 
@@ -127,13 +121,13 @@
 
     </div>
 
-   <!-- ===========================================
-     PREMIUM SCROLL INDICATOR
-    =========================================== -->
+    <!-- ===========================================
+         PREMIUM SCROLL INDICATOR
+    ============================================ -->
 
     <a href="#about"
-    class="scroll-indicator"
-    aria-label="Scroll Down">
+       class="scroll-indicator"
+       aria-label="Scroll Down">
 
         <div class="mouse">
 

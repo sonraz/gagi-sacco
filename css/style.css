@@ -116,17 +116,13 @@ p{
     color: #555;
 }
 
-span{
-    color: var(--primary-color);
-}
-
 
 /* ===========================================
    5. SECTION SPACING
 =========================================== */
 
 section{
-    padding: 5rem 0;
+    padding: 4.5rem 0;
 }
 
 
